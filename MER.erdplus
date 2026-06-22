@@ -6,8 +6,8 @@
         "id": "19ce1857-ee12-49fe-be6b-b601124284bd",
         "type": "Table",
         "position": {
-          "x": 1237.6715714626737,
-          "y": 4.378617892120957
+          "x": 1310.8319697544252,
+          "y": -96.53517417869725
         },
         "data": {
           "label": "cliente",
@@ -25,7 +25,7 @@
             {
               "id": "50234d5f-4ab5-45a3-a3bc-ac2e11909ec7",
               "name": "cpf",
-              "type": "VARCHAR(n)",
+              "type": "INT",
               "position": 0,
               "isPrimaryKey": false,
               "isUnique": true,
@@ -76,8 +76,8 @@
         "id": "4e2cade8-86b7-4f21-8bbe-c91033e841d2",
         "type": "Table",
         "position": {
-          "x": 597,
-          "y": 54
+          "x": 603.0408884849793,
+          "y": -8.475806234830891
         },
         "data": {
           "label": "endereco",
@@ -99,7 +99,8 @@
               "position": 0,
               "isPrimaryKey": false,
               "isUnique": false,
-              "size": "100"
+              "size": "100",
+              "isOptional": false
             },
             {
               "id": "54ee2062-f16a-4261-b3be-1ad06ee11b49",
@@ -108,22 +109,17 @@
               "position": 0,
               "isPrimaryKey": false,
               "isUnique": false,
-              "size": "100"
+              "size": "100",
+              "isOptional": false
             },
             {
               "id": "385170db-a95d-4712-b4dd-37394fa46981",
-              "name": "numero_e",
+              "name": "numero_end",
               "type": "INT",
               "position": 0,
               "isPrimaryKey": false,
-              "isUnique": false
-            },
-            {
-              "id": "881498ce-6cae-437e-aa1b-67c9d636daf3",
-              "name": "apelido",
-              "type": "VARCHAR(n)",
-              "position": 0,
-              "size": "100"
+              "isUnique": false,
+              "isOptional": false
             },
             {
               "id": "fk_9ea4ca3f-082f-4eac-97e4-f257bcccf3e3",
@@ -140,7 +136,16 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isOptional": false
+            },
+            {
+              "id": "654f53b2-b81d-4dfe-9c6f-3fdb7130cf48",
+              "name": "obs",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isOptional": true,
+              "size": "100"
             }
           ],
           "isSelected": false
@@ -272,7 +277,8 @@
               "type": "VARCHAR(n)",
               "position": 0,
               "size": "2",
-              "isPrimaryKey": false
+              "isPrimaryKey": false,
+              "isUnique": true
             },
             {
               "id": "b6b34492-d1fc-489b-b82a-da531f4a76e2",
@@ -280,7 +286,8 @@
               "type": "INT",
               "position": 0,
               "isPrimaryKey": true,
-              "isOptional": false
+              "isOptional": false,
+              "isUnique": false
             },
             {
               "id": "fk_9867e273-3fee-49b0-b1ae-85b0167d7866",
@@ -297,7 +304,8 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isUnique": false
             }
           ],
           "isSelected": false
@@ -349,8 +357,8 @@
         "id": "bba747bd-06a6-458d-9356-41e28c5e856b",
         "type": "Table",
         "position": {
-          "x": 1291.382851949733,
-          "y": 226.17473125505643
+          "x": 1304.5779310574621,
+          "y": 318.5402850091591
         },
         "data": {
           "label": "emprestimo",
@@ -367,43 +375,30 @@
             {
               "id": "2bff98c4-86bf-4288-9f90-621857ab8e55",
               "name": "prazo",
-              "type": "DATE",
-              "position": 0
+              "type": "INT",
+              "position": 0,
+              "isOptional": false
             },
             {
               "id": "e0da584b-89d2-48dc-bf5b-1707a19e27d6",
               "name": "valor_solicitado",
-              "type": "INT",
-              "position": 0
+              "type": "FLOAT",
+              "position": 0,
+              "isOptional": false
             },
             {
               "id": "2efa56dc-96a6-4049-a310-478f2d3ca602",
               "name": "dt_solicitacao",
               "type": "DATE",
-              "position": 0
+              "position": 0,
+              "isOptional": false
             },
             {
               "id": "6bad554d-fd1f-47c0-8f29-0f64218ab413",
               "name": "taxa_juros",
-              "type": "INT",
-              "position": 0
-            },
-            {
-              "id": "fk_9f9eb505-c263-4502-8fe9-4e30178dde5e",
-              "name": "fk_cliente",
-              "type": "None",
-              "isForeignKey": true,
-              "foreignKeyProps": {
-                "foreignKeyGroupId": "f9f79cb9-9f18-423a-86eb-785eb821ad60",
-                "sourceTableId": "19ce1857-ee12-49fe-be6b-b601124284bd",
-                "columns": [
-                  {
-                    "id": "fk_cbe90655-8137-4c0f-b4fa-37910e086888",
-                    "name": "id_cliente",
-                    "type": "INT"
-                  }
-                ]
-              }
+              "type": "FLOAT",
+              "position": 0,
+              "isOptional": false
             },
             {
               "id": "fk_315092b8-2047-49ae-bd75-ff431b40e837",
@@ -420,24 +415,33 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isOptional": false
+            },
+            {
+              "id": "033ad187-dfe8-4915-be1e-bd649437ed0f",
+              "name": "obs",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "100",
+              "isOptional": true
             }
           ],
-          "isSelected": true
+          "isSelected": false
         },
         "measured": {
           "width": 240,
           "height": 202
         },
-        "selected": true,
+        "selected": false,
         "dragging": false
       },
       {
         "id": "2817fe40-b269-42c7-bd8b-b7cbfb5be759",
         "type": "Table",
         "position": {
-          "x": 1278.8439451054421,
-          "y": 484.06310060946015
+          "x": 1298.6365637670356,
+          "y": 629.2089707944784
         },
         "data": {
           "label": "status_emprestimo",
@@ -473,8 +477,8 @@
         "id": "c25bc1a9-9d2d-458c-8c7b-d0b390e5b030",
         "type": "Table",
         "position": {
-          "x": 1658.7174588749258,
-          "y": 224.858800690362
+          "x": 1634.9663164810138,
+          "y": 363.40713132151586
         },
         "data": {
           "label": "contrato",
@@ -502,8 +506,8 @@
             },
             {
               "id": "f9a1637c-6e2f-49ce-a3a5-eea467515389",
-              "name": "valor_total",
-              "type": "INT",
+              "name": "valor_financiado",
+              "type": "FLOAT",
               "position": 0
             },
             {
@@ -522,13 +526,19 @@
                   }
                 ]
               }
+            },
+            {
+              "id": "f989fd0f-ef79-4ea5-9fa6-7447ae2fd25d",
+              "name": "valor_pago",
+              "type": "FLOAT",
+              "position": 0
             }
           ],
           "isSelected": false
         },
         "measured": {
           "width": 240,
-          "height": 152
+          "height": 177
         },
         "selected": false,
         "dragging": false
@@ -537,8 +547,8 @@
         "id": "ddf88179-dc17-4bea-ad54-6162ea0110dc",
         "type": "Table",
         "position": {
-          "x": 1986.8822839936197,
-          "y": 214.93797509423965
+          "x": 1977.6457286182094,
+          "y": 316.5400842237525
         },
         "data": {
           "label": "parcela",
@@ -566,8 +576,8 @@
             },
             {
               "id": "e1f2ae1f-6cc8-4375-83e9-0c6cef2d5e80",
-              "name": "valor",
-              "type": "INT",
+              "name": "valor_parcela",
+              "type": "FLOAT",
               "position": 0
             },
             {
@@ -603,13 +613,19 @@
                   }
                 ]
               }
+            },
+            {
+              "id": "d0f68c34-5736-4e36-9296-b152b7c69cee",
+              "name": "valor_pago",
+              "type": "FLOAT",
+              "position": 0
             }
           ],
           "isSelected": false
         },
         "measured": {
           "width": 240,
-          "height": 177
+          "height": 202
         },
         "selected": false,
         "dragging": false
@@ -618,8 +634,8 @@
         "id": "1c52ff92-bf5f-4e89-97ac-97599db56972",
         "type": "Table",
         "position": {
-          "x": 1989.444276974393,
-          "y": 432.5774066855626
+          "x": 1979.8863922871662,
+          "y": 542.5336619659835
         },
         "data": {
           "label": "status_parcela",
@@ -679,7 +695,7 @@
             {
               "id": "0ecf8f11-4972-4c64-b53d-44521851e40f",
               "name": "valor_pago",
-              "type": "INT",
+              "type": "FLOAT",
               "position": 0,
               "isPrimaryKey": false
             },
@@ -733,8 +749,10 @@
             {
               "id": "1966cfdb-2f57-4590-9196-e3f6db03d14e",
               "name": "apelido",
-              "type": "INT",
-              "position": 0
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isOptional": true,
+              "size": "100"
             },
             {
               "id": "fk_d1dd1fc9-cbde-457d-a0dc-ee9368ebef99",
@@ -751,7 +769,8 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isOptional": false
             },
             {
               "id": "fk_e490427c-8c52-478c-811e-55785053e40f",
@@ -768,7 +787,8 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isOptional": false
             }
           ],
           "isSelected": false
@@ -778,6 +798,124 @@
           "height": 127
         },
         "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "fc61e175-23fe-415c-a23e-b88f5c19a59f",
+        "type": "Table",
+        "position": {
+          "x": 1308.5724951781199,
+          "y": 121.23971845479124
+        },
+        "data": {
+          "label": "participante_emprestimo",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "5d292408-34a4-443d-9d00-e21723a58680",
+              "name": "id_participante_emp",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "fk_165d774a-2bff-45c8-9520-19f9f6cb3208",
+              "name": "fk_papel_participante",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "fd3ca4aa-6421-4f5f-af39-4a9cdc18d998",
+                "sourceTableId": "bf073ef5-9f7f-457d-8a7d-7dcd978f8de1",
+                "columns": [
+                  {
+                    "id": "fk_352d8a5b-1b40-4b18-bb06-39ce42ecde5f",
+                    "name": "id_papel",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_edca2f21-e3d3-4f04-bda2-58dff4ea6983",
+              "name": "fk_cliente",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "cd2cf064-96d0-48d9-8463-ea924e03c3fe",
+                "sourceTableId": "19ce1857-ee12-49fe-be6b-b601124284bd",
+                "columns": [
+                  {
+                    "id": "fk_cbe90655-8137-4c0f-b4fa-37910e086888",
+                    "name": "id_cliente",
+                    "type": "INT"
+                  }
+                ]
+              }
+            },
+            {
+              "id": "fk_4ab2d180-3c93-45be-a397-b71fac8a63cc",
+              "name": "fk_emprestimo",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "2b932b8e-5b38-45af-a37a-aecbd152825b",
+                "sourceTableId": "bba747bd-06a6-458d-9356-41e28c5e856b",
+                "columns": [
+                  {
+                    "id": "fk_68051153-99f0-4b1a-a696-648ef6c9280b",
+                    "name": "id_emprestimo",
+                    "type": "INT"
+                  }
+                ]
+              }
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 151
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "bf073ef5-9f7f-457d-8a7d-7dcd978f8de1",
+        "type": "Table",
+        "position": {
+          "x": 1643.0583480740072,
+          "y": 193.11528965174725
+        },
+        "data": {
+          "label": "papel_participante",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "352d8a5b-1b40-4b18-bb06-39ce42ecde5f",
+              "name": "id_papel",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": true
+            },
+            {
+              "id": "69aef88b-a866-4509-946b-d3ce845c5042",
+              "name": "desc",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "100"
+            }
+          ],
+          "isSelected": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": true,
         "dragging": false
       }
     ],
@@ -875,30 +1013,6 @@
         }
       },
       {
-        "id": "19ce1857-ee12-49fe-be6b-b601124284bd->bba747bd-06a6-458d-9356-41e28c5e856b_f9f79cb9-9f18-423a-86eb-785eb821ad60",
-        "type": "Relational",
-        "source": "19ce1857-ee12-49fe-be6b-b601124284bd",
-        "targetHandle": "foreign-key-handle-f9f79cb9-9f18-423a-86eb-785eb821ad60",
-        "target": "bba747bd-06a6-458d-9356-41e28c5e856b",
-        "markerStart": {
-          "type": "arrow"
-        },
-        "data": {
-          "foreignKeyProps": {
-            "foreignKeyGroupId": "f9f79cb9-9f18-423a-86eb-785eb821ad60",
-            "sourceTableId": "19ce1857-ee12-49fe-be6b-b601124284bd",
-            "columns": [
-              {
-                "id": "fk_cbe90655-8137-4c0f-b4fa-37910e086888",
-                "name": "id_cliente",
-                "type": "INT"
-              }
-            ]
-          }
-        },
-        "selected": false
-      },
-      {
         "id": "2817fe40-b269-42c7-bd8b-b7cbfb5be759->bba747bd-06a6-458d-9356-41e28c5e856b_8e1f5898-5b79-440c-b5fe-777c9a9b9014",
         "type": "Relational",
         "source": "2817fe40-b269-42c7-bd8b-b7cbfb5be759",
@@ -942,7 +1056,8 @@
               }
             ]
           }
-        }
+        },
+        "selected": false
       },
       {
         "id": "c25bc1a9-9d2d-458c-8c7b-d0b390e5b030->ddf88179-dc17-4bea-ad54-6162ea0110dc_7ba9559b-8e46-42cd-bd0f-b161c024f218",
@@ -1058,12 +1173,81 @@
             ]
           }
         }
+      },
+      {
+        "id": "bf073ef5-9f7f-457d-8a7d-7dcd978f8de1->fc61e175-23fe-415c-a23e-b88f5c19a59f_fd3ca4aa-6421-4f5f-af39-4a9cdc18d998",
+        "type": "Relational",
+        "source": "bf073ef5-9f7f-457d-8a7d-7dcd978f8de1",
+        "targetHandle": "foreign-key-handle-fd3ca4aa-6421-4f5f-af39-4a9cdc18d998",
+        "target": "fc61e175-23fe-415c-a23e-b88f5c19a59f",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "fd3ca4aa-6421-4f5f-af39-4a9cdc18d998",
+            "sourceTableId": "bf073ef5-9f7f-457d-8a7d-7dcd978f8de1",
+            "columns": [
+              {
+                "id": "fk_352d8a5b-1b40-4b18-bb06-39ce42ecde5f",
+                "name": "id_papel",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "19ce1857-ee12-49fe-be6b-b601124284bd->fc61e175-23fe-415c-a23e-b88f5c19a59f_cd2cf064-96d0-48d9-8463-ea924e03c3fe",
+        "type": "Relational",
+        "source": "19ce1857-ee12-49fe-be6b-b601124284bd",
+        "targetHandle": "foreign-key-handle-cd2cf064-96d0-48d9-8463-ea924e03c3fe",
+        "target": "fc61e175-23fe-415c-a23e-b88f5c19a59f",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "cd2cf064-96d0-48d9-8463-ea924e03c3fe",
+            "sourceTableId": "19ce1857-ee12-49fe-be6b-b601124284bd",
+            "columns": [
+              {
+                "id": "fk_cbe90655-8137-4c0f-b4fa-37910e086888",
+                "name": "id_cliente",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "bba747bd-06a6-458d-9356-41e28c5e856b->fc61e175-23fe-415c-a23e-b88f5c19a59f_2b932b8e-5b38-45af-a37a-aecbd152825b",
+        "type": "Relational",
+        "source": "bba747bd-06a6-458d-9356-41e28c5e856b",
+        "targetHandle": "foreign-key-handle-2b932b8e-5b38-45af-a37a-aecbd152825b",
+        "target": "fc61e175-23fe-415c-a23e-b88f5c19a59f",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "2b932b8e-5b38-45af-a37a-aecbd152825b",
+            "sourceTableId": "bba747bd-06a6-458d-9356-41e28c5e856b",
+            "columns": [
+              {
+                "id": "fk_68051153-99f0-4b1a-a696-648ef6c9280b",
+                "name": "id_emprestimo",
+                "type": "INT"
+              }
+            ]
+          }
+        }
       }
     ],
     "viewport": {
-      "x": -469.02403226991476,
-      "y": 109.3597770844606,
-      "zoom": 0.8583250138146962
+      "x": -378.20254794193943,
+      "y": 139.54227220708708,
+      "zoom": 0.8705505632961256
     }
   },
   "name": "MER",
@@ -1071,8 +1255,8 @@
     "name": "Diagrams",
     "folderType": 1,
     "depth": 0,
-    "id": 345093
+    "id": 345091
   },
-  "id": 489766,
-  "updatedAtTimestamp": 1781740162
+  "id": 493559,
+  "updatedAtTimestamp": 1782167974
 }
