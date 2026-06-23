@@ -5,18 +5,18 @@ O sistema deverá permitir o gerenciamento de clientes, solicitações de empré
 
 ## Definições e Regras de Negócio
 
-1. ~~O sistema deve permitir o cadastro e gerenciamento de clientes.~~
-2. ~~Um cliente pode solicitar um ou mais empréstimos ao longo do tempo.~~
-3. Cada solicitação de empréstimo deve possuir informações como valor solicitado, taxa de juros, prazo de pagamento, data da solicitação, data de liquidação, situação atual, observações e demais informações pertinentes. ~~MER~~ ~~DER~~
-4. O sistema deverá permitir empréstimos associados a mais de um cliente simultaneamente, como em situações de coobrigação financeira ou solicitação conjunta de crédito, nas quais dois ou mais clientes compartilham responsabilidade sobre o mesmo empréstimo. ~~MER~~ ~~DER~~
-5. Determinadas modalidades de empréstimo podem exigir a vinculação de fiadores como garantia adicional para aprovação da operação de crédito. ~~MER~~ ~~DER~~
-6. ~~Uma solicitação de empréstimo poderá possuir diferentes status, incluindo aprovado, rejeitado ou em análise.~~
-7. ~~Cada empréstimo deve conter informações como número identificador, data de início, data de término,~~ valor total financiado e valor total a ser pago. ~~MER~~ ~~DER~~
-8. ~~Um empréstimo deverá gerar uma ou mais parcelas para pagamento.~~
-9. ~~Cada parcela deve possuir no mínimo número identificador, data de vencimento,~~ valor da parcela, valor pago ~~e situação de pagamento.~~ ~~mer~~ ~~DER~~
-10. ~~O sistema deverá permitir o registro de pagamentos realizados pelos clientes.~~
-11. ~~Cada pagamento deverá estar associado a uma única parcela.~~
-12. ~~O histórico de pagamentos deve permitir o acompanhamento da situação financeira do empréstimo como um todo.~~
+1. O sistema deve permitir o cadastro e gerenciamento de clientes.
+2. Um cliente pode solicitar um ou mais empréstimos ao longo do tempo.
+3. Cada solicitação de empréstimo deve possuir informações como valor solicitado, taxa de juros, prazo de pagamento, data da solicitação, data de liquidação, situação atual, observações e demais informações pertinentes. 
+4. O sistema deverá permitir empréstimos associados a mais de um cliente simultaneamente, como em situações de coobrigação financeira ou solicitação conjunta de crédito, nas quais dois ou mais clientes compartilham responsabilidade sobre o mesmo empréstimo. 
+5. Determinadas modalidades de empréstimo podem exigir a vinculação de fiadores como garantia adicional para aprovação da operação de crédito. 
+6. Uma solicitação de empréstimo poderá possuir diferentes status, incluindo aprovado, rejeitado ou em análise.
+7. ada empréstimo deve conter informações como número identificador, data de início, data de término, valor total financiado e valor total a ser pago.
+8. Um empréstimo deverá gerar uma ou mais parcelas para pagamento.
+9. Cada parcela deve possuir no mínimo número identificador, data de vencimento, valor da parcela, valor pago e situação de pagamento.
+10. O sistema deverá permitir o registro de pagamentos realizados pelos clientes.
+11. Cada pagamento deverá estar associado a uma única parcela.
+12. O histórico de pagamentos deve permitir o acompanhamento da situação financeira do empréstimo como um todo.
 
 ## Entrega Final
 

@@ -76,8 +76,8 @@
         "id": "4e2cade8-86b7-4f21-8bbe-c91033e841d2",
         "type": "Table",
         "position": {
-          "x": 603.0408884849793,
-          "y": -8.475806234830891
+          "x": 607.0957751501415,
+          "y": -9.489527901121445
         },
         "data": {
           "label": "endereco",
@@ -321,8 +321,8 @@
         "id": "f1b5d510-4cd6-4fac-9ed8-ffc12a9b64b1",
         "type": "Table",
         "position": {
-          "x": 601.2788628552935,
-          "y": 556.0185338547005
+          "x": 603.3063061878746,
+          "y": 558.0459771872816
         },
         "data": {
           "label": "pais",
@@ -411,7 +411,7 @@
                 "columns": [
                   {
                     "id": "fk_7e25576d-3f35-41f9-b756-5ed5194617be",
-                    "name": "id_status",
+                    "name": "id_st_emprestimo",
                     "type": "INT"
                   }
                 ]
@@ -440,8 +440,8 @@
         "id": "2817fe40-b269-42c7-bd8b-b7cbfb5be759",
         "type": "Table",
         "position": {
-          "x": 1298.6365637670356,
-          "y": 629.2089707944784
+          "x": 1293.2861087350664,
+          "y": 633.2218120684552
         },
         "data": {
           "label": "status_emprestimo",
@@ -458,9 +458,9 @@
             {
               "id": "e0eec522-d9b3-4bd8-a0b8-bd60199210e8",
               "name": "descr",
-              "type": "CHAR(n)",
+              "type": "VARCHAR(n)",
               "position": 0,
-              "size": "10",
+              "size": "100",
               "isPrimaryKey": false
             }
           ],
@@ -652,9 +652,10 @@
             {
               "id": "973b5f77-88f7-450f-830e-cbcf8dc72130",
               "name": "descr",
-              "type": "INT",
+              "type": "VARCHAR(n)",
               "position": 0,
-              "isPrimaryKey": false
+              "isPrimaryKey": false,
+              "size": "100"
             }
           ],
           "isSelected": false
@@ -731,8 +732,8 @@
         "id": "c1be4374-ef50-4436-b3b4-805e5a73b145",
         "type": "Table",
         "position": {
-          "x": 943.0191837701781,
-          "y": 35.15249413873373
+          "x": 932.8819671072725,
+          "y": -80.41177581838929
         },
         "data": {
           "label": "cliente_endereco",
@@ -1246,7 +1247,7 @@
     ],
     "viewport": {
       "x": -229.21862582356766,
-      "y": 199.97774517159942,
+      "y": 198.4777451715994,
       "zoom": 0.7475999660028788
     }
   },
@@ -1258,5 +1259,5 @@
     "id": 345091
   },
   "id": 493559,
-  "updatedAtTimestamp": 1782180317
+  "updatedAtTimestamp": 1782185036
 }
