@@ -132,8 +132,9 @@
                 "columns": [
                   {
                     "id": "fk_549c8cd5-b63c-4aea-907e-dd2349574043",
-                    "name": "numero",
-                    "type": "INT"
+                    "name": "id_cep",
+                    "type": "VARCHAR(n)",
+                    "size": "8"
                   }
                 ]
               },
@@ -170,12 +171,13 @@
           "columns": [
             {
               "id": "549c8cd5-b63c-4aea-907e-dd2349574043",
-              "name": "numero",
-              "type": "INT",
+              "name": "id_cep",
+              "type": "VARCHAR(n)",
               "position": 0,
               "isPrimaryKey": true,
               "isOptional": false,
-              "isUnique": false
+              "isUnique": false,
+              "size": "8"
             },
             {
               "id": "fk_0566c3c6-3b73-462e-ad98-47ea3b28a140",
@@ -274,7 +276,7 @@
             {
               "id": "1c678084-8f5d-4694-bf19-56257ad15089",
               "name": "uf",
-              "type": "VARCHAR(n)",
+              "type": "CHAR(n)",
               "position": 0,
               "size": "2",
               "isPrimaryKey": false,
@@ -1246,9 +1248,9 @@
       }
     ],
     "viewport": {
-      "x": -229.21862582356766,
-      "y": 198.4777451715994,
-      "zoom": 0.7475999660028788
+      "x": 134.0580488655744,
+      "y": 284.39524838658997,
+      "zoom": 0.5743491774985175
     }
   },
   "name": "MER",
@@ -1256,8 +1258,8 @@
     "name": "Diagrams",
     "folderType": 1,
     "depth": 0,
-    "id": 345091
+    "id": 345093
   },
-  "id": 493559,
-  "updatedAtTimestamp": 1782185036
+  "id": 495001,
+  "updatedAtTimestamp": 1782246057
 }

@@ -22,11 +22,11 @@ O sistema deverá permitir o gerenciamento de clientes, solicitações de empré
 
 |Item|Descrição|Artefato|OK|
 |:--:|--|:--:|:--:|
-|MER|Modelo Entidade-Relacionamento|Imagem|S|
-|DER|Diagrama Entidade-Relacionamento|Imagem|S|
-|DDL| Linguaguem de Definição de Dados|Texto|S|
+|MER|Modelo Entidade-Relacionamento|Imagem|OK|
+|DER|Diagrama Entidade-Relacionamento|Imagem|OK|
+|DDL| Linguaguem de Definição de Dados|Texto|OK|
 |Con.| Consultas SQL no Banco de Dados| Texto/Imagem|N|
-|DB| Banco de Dados Final|SQL|N|
+|DB| Banco de Dados Final|MySQL|OK|
 
 *30 registros em cada tabela de entidades (5 registros em tabelas de domínio/tipagem)*
 
