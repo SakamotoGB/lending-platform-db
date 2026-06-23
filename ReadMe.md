@@ -24,7 +24,7 @@ O sistema deverá permitir o gerenciamento de clientes, solicitações de empré
 |:--:|--|:--:|:--:|
 |MER|Modelo Entidade-Relacionamento|Imagem|S|
 |DER|Diagrama Entidade-Relacionamento|Imagem|S|
-|DDL| Linguaguem de Definição de Dados|Texto|N|
+|DDL| Linguaguem de Definição de Dados|Texto|S|
 |Con.| Consultas SQL no Banco de Dados| Texto/Imagem|N|
 |DB| Banco de Dados Final|SQL|N|
 

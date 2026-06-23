@@ -38,7 +38,7 @@ bairro varchar(100) NOT NULL,
 rua varchar(100) NOT NULL,
 numero_end int NOT NULL,
 obs varchar(100),
-numero int NOT NULL,
+numero varchar(8) NOT NULL,
 FOREIGN KEY(numero) REFERENCES cep(numero)
 )
 
@@ -58,7 +58,7 @@ descr varchar (100) NOT NULL
 
 CREATE TABLE status_emprestimo(
 id_st_emprestimo int AUTO_INCREMENT PRIMARY KEY,
-descr varchar(100) NOT NULL
+descr varchar(100)
 )
 
 CREATE TABLE emprestimo(
@@ -116,3 +116,4 @@ valor_pago float NOT NULL,
 id_parcela int NOT NULL,
 FOREIGN KEY (id_parcela) REFERENCES parcela(id_parcela)
 )
+
