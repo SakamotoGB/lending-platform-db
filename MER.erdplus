@@ -435,14 +435,16 @@
                     "type": "INT"
                   }
                 ]
-              }
+              },
+              "isOptional": false
             },
             {
               "id": "697a2cdb-b268-4c31-b66b-e0a099c1fa88",
               "name": "obs",
               "type": "VARCHAR(n)",
               "position": 0,
-              "size": "100"
+              "size": "100",
+              "isOptional": true
             }
           ],
           "isSelected": false
@@ -1323,8 +1325,8 @@
       }
     ],
     "viewport": {
-      "x": -1041.115167600104,
-      "y": -255.67803167263298,
+      "x": -1047.5932420365643,
+      "y": -266.685490277015,
       "zoom": 1.3016471430479393
     }
   },
@@ -1336,5 +1338,5 @@
     "id": 317294
   },
   "id": 496525,
-  "updatedAtTimestamp": 1782341931
+  "updatedAtTimestamp": 1782342471
 }

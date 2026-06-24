@@ -72,9 +72,9 @@ prazo int NOT NULL,
 valor_solicitado float NOT NULL,
 dt_solicitacao date NOT NULL,
 taxa_juros float NOT NULL,
-obs varchar(100),
 id_st_emprestimo int NOT NULL,
 id_tp_emp int NOT NULL,
+obs varchar(100),
 FOREIGN KEY (id_st_emprestimo) REFERENCES status_emprestimo (id_st_emprestimo),
 FOREIGN KEY (id_tp_emp) REFERENCES tipo_emprestimo (id_tp_emp)
 );
