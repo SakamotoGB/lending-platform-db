@@ -74,13 +74,13 @@ Crie uma consulta SQL adicional (com complexidade mínima de envolvimento de 3 t
 #### To-do List Consultas
 |Item|Descrição|OK|
 |:--:|--|:--:|
-|1|[Clientes com Empréstimos Ativos](https://github.com/BernardoLondero/BD#clientes-com-empr%C3%A9stimos-ativos)|N|
-|2|Fila de Propostas em Análise|N|
+|1|[Clientes com Empréstimos Ativos](https://github.com/BernardoLondero/BD#clientes-com-empr%C3%A9stimos-ativos)|OK|
+|2|Fila de Propostas em Análise|OK|
 |3|Relação de Empréstimos e Fiadores|N|
 |4|Resumo Financeiro da Carteira Ativa|N|
-|5|Quantitativo de Empréstimos por Status|N|
-|6|Controle e Situação de Parcelas|N|
-|7|Acompanhamento de Adimplência|N|
+|5|Quantitativo de Empréstimos por Status|OK|
+|6|Controle e Situação de Parcelas|OK|
+|7|Acompanhamento de Adimplência|OK|
 |8|Consulta Adicional|N|
 
 ## Equipe
