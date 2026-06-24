@@ -1,4 +1,4 @@
-# Modelagem DB
+2# Modelagem DB
 
 Modelagem de um banco de dados para instituição financeira.
 O sistema deverá permitir o gerenciamento de clientes, solicitações de empréstimo, contratos financeiros, parcelas e pagamentos vinculados às operações de crédito realizadas pela instituição.
@@ -74,7 +74,7 @@ Crie uma consulta SQL adicional (com complexidade mínima de envolvimento de 3 t
 #### To-do List Consultas
 |Item|Descrição|OK|
 |:--:|--|:--:|
-|1|Clientes com Empréstimos Ativos|N|
+|1|[Clientes com Empréstimos Ativos](https://github.com/BernardoLondero/BD#clientes-com-empr%C3%A9stimos-ativos)|N|
 |2|Fila de Propostas em Análise|N|
 |3|Relação de Empréstimos e Fiadores|N|
 |4|Resumo Financeiro da Carteira Ativa|N|
