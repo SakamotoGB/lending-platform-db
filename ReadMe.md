@@ -75,13 +75,13 @@ Crie uma consulta SQL adicional (com complexidade mínima de envolvimento de 3 t
 |Item|Descrição|OK|
 |:--:|--|:--:|
 |1|[Clientes com Empréstimos Ativos](https://github.com/BernardoLondero/BD#clientes-com-empr%C3%A9stimos-ativos)|OK|
-|2|Fila de Propostas em Análise|OK|
-|3|Relação de Empréstimos e Fiadores|N|
-|4|Resumo Financeiro da Carteira Ativa|N|
-|5|Quantitativo de Empréstimos por Status|OK|
-|6|Controle e Situação de Parcelas|OK|
-|7|Acompanhamento de Adimplência|OK|
-|8|Consulta Adicional|N|
+|2|[Fila de Propostas em Análise](https://github.com/BernardoLondero/BD#fila-de-propostas-em-an%C3%A1lise)|OK|
+|3|[Relação de Empréstimos e Fiadores](https://github.com/BernardoLondero/BD#rela%C3%A7%C3%A3o-de-empr%C3%A9stimos-e-fiadores)|N|
+|4|[Resumo Financeiro da Carteira Ativa](https://github.com/BernardoLondero/BD#resumo-financeiro-da-carteira-ativa)|N|
+|5|[Quantitativo de Empréstimos por Status](https://github.com/BernardoLondero/BD#quantitativo-de-empr%C3%A9stimos-por-status)|OK|
+|6|[Controle e Situação de Parcelas](https://github.com/BernardoLondero/BD#controle-e-situa%C3%A7%C3%A3o-de-parcelas)|OK|
+|7|[Acompanhamento de Adimplência](https://github.com/BernardoLondero/BD#acompanhamento-de-adimpl%C3%AAncia)|OK|
+|8|[Consulta Adicional](https://github.com/BernardoLondero/BD#consulta-adicional)|N|
 
 ## Equipe
 Este projeto foi desenvolvido colaborativamente por:
