@@ -25,7 +25,7 @@ O sistema deverá permitir o gerenciamento de clientes, solicitações de empré
 |MER|Modelo Entidade-Relacionamento|Imagem|OK|
 |DER|Diagrama Entidade-Relacionamento|Imagem|OK|
 |DDL| Linguaguem de Definição de Dados|Texto|OK|
-|Con.| Consultas SQL no Banco de Dados| Texto/Imagem|N|
+|Con.| Consultas SQL no Banco de Dados| Texto/Imagem|OK|
 |DB| Banco de Dados Final|MySQL|OK|
 
 *30 registros em cada tabela de entidades (5 registros em tabelas de domínio/tipagem)*
@@ -74,12 +74,12 @@ Crie uma consulta SQL adicional (com complexidade mínima de envolvimento de 3 t
 |:--:|--|:--:|
 |1|[Clientes com Empréstimos Ativos](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#clientes-com-empr%C3%A9stimos-ativos)|OK|
 |2|[Fila de Propostas em Análise](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#fila-de-propostas-em-an%C3%A1lise)|OK|
-|3|[Relação de Empréstimos e Fiadores](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#rela%C3%A7%C3%A3o-de-empr%C3%A9stimos-e-fiadores)|N|
-|4|[Resumo Financeiro da Carteira Ativa](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#resumo-financeiro-da-carteira-ativa)|N|
+|3|[Relação de Empréstimos e Fiadores](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#rela%C3%A7%C3%A3o-de-empr%C3%A9stimos-e-fiadores)|OK|
+|4|[Resumo Financeiro da Carteira Ativa](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#resumo-financeiro-da-carteira-ativa)|OK|
 |5|[Quantitativo de Empréstimos por Status](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#quantitativo-de-empr%C3%A9stimos-por-status)|OK|
 |6|[Controle e Situação de Parcelas](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#controle-e-situa%C3%A7%C3%A3o-de-parcelas)|OK|
 |7|[Acompanhamento de Adimplência](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#acompanhamento-de-adimpl%C3%AAncia)|OK|
-|8|[Consulta Adicional](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#consulta-adicional)|N|
+|8|[Consulta Adicional](https://github.com/SakamotoGB/Projeto_Universidade_BD/blob/main/ReadMe.md#consulta-adicional)|OK|
 
 ## Equipe
 Este projeto foi desenvolvido colaborativamente por:
