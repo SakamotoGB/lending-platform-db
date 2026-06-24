@@ -61,6 +61,11 @@ id_st_emprestimo int AUTO_INCREMENT PRIMARY KEY,
 descr varchar(100) NOT NULL
 );
 
+CREATE TABLE tipo_emprestimo(
+id_tp_emp int AUTO_INCREMENT PRIMARY KEY,
+descr varchar(100) NOT NULL
+);
+
 CREATE TABLE emprestimo(
 id_emprestimo int AUTO_INCREMENT PRIMARY KEY,
 prazo int NOT NULL,
@@ -69,7 +74,9 @@ dt_solicitacao date NOT NULL,
 taxa_juros float NOT NULL,
 obs varchar(100),
 id_st_emprestimo int NOT NULL,
-FOREIGN KEY (id_st_emprestimo) REFERENCES status_emprestimo (id_st_emprestimo)
+id_tp_emp int NOT NULL,
+FOREIGN KEY (id_st_emprestimo) REFERENCES status_emprestimo (id_st_emprestimo),
+FOREIGN KEY (id_tp_emp) REFERENCES tipo_emprestimo (id_tp_emp)
 );
 
 CREATE TABLE participante_emprestimo(

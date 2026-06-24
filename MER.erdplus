@@ -421,12 +421,21 @@
               "isOptional": false
             },
             {
-              "id": "033ad187-dfe8-4915-be1e-bd649437ed0f",
-              "name": "obs",
-              "type": "VARCHAR(n)",
-              "position": 0,
-              "size": "100",
-              "isOptional": true
+              "id": "fk_09d86c14-572e-49c0-86b2-ad4c90c6fdb0",
+              "name": "fk_tipo_emprestimo",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "f78699ff-530b-41ac-9dcd-fc9ca2fb90f9",
+                "sourceTableId": "c8b0db05-4e70-4ccf-b215-012c31b84a6d",
+                "columns": [
+                  {
+                    "id": "fk_be4fc997-5388-4f3a-9e55-7e4cfa6fbf07",
+                    "name": "id_tp_emp",
+                    "type": "INT"
+                  }
+                ]
+              }
             }
           ],
           "isSelected": false
@@ -442,8 +451,8 @@
         "id": "2817fe40-b269-42c7-bd8b-b7cbfb5be759",
         "type": "Table",
         "position": {
-          "x": 1293.2861087350664,
-          "y": 633.2218120684552
+          "x": 1297.3409954002286,
+          "y": 635.2492554010363
         },
         "data": {
           "label": "status_emprestimo",
@@ -920,6 +929,42 @@
         },
         "selected": false,
         "dragging": false
+      },
+      {
+        "id": "c8b0db05-4e70-4ccf-b215-012c31b84a6d",
+        "type": "Table",
+        "position": {
+          "x": 1300.3912474237045,
+          "y": 546.89564109082
+        },
+        "data": {
+          "label": "tipo_emprestimo",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "be4fc997-5388-4f3a-9e55-7e4cfa6fbf07",
+              "name": "id_tp_emp",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "02d62f56-b15b-4593-a313-e2f6f3860358",
+              "name": "descr",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "size": "100"
+            }
+          ],
+          "isSelected": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": true,
+        "dragging": false
       }
     ],
     "edges": [
@@ -1245,12 +1290,35 @@
             ]
           }
         }
+      },
+      {
+        "id": "c8b0db05-4e70-4ccf-b215-012c31b84a6d->bba747bd-06a6-458d-9356-41e28c5e856b_f78699ff-530b-41ac-9dcd-fc9ca2fb90f9",
+        "type": "Relational",
+        "source": "c8b0db05-4e70-4ccf-b215-012c31b84a6d",
+        "targetHandle": "foreign-key-handle-f78699ff-530b-41ac-9dcd-fc9ca2fb90f9",
+        "target": "bba747bd-06a6-458d-9356-41e28c5e856b",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "f78699ff-530b-41ac-9dcd-fc9ca2fb90f9",
+            "sourceTableId": "c8b0db05-4e70-4ccf-b215-012c31b84a6d",
+            "columns": [
+              {
+                "id": "fk_be4fc997-5388-4f3a-9e55-7e4cfa6fbf07",
+                "name": "id_tp_emp",
+                "type": "INT"
+              }
+            ]
+          }
+        }
       }
     ],
     "viewport": {
-      "x": 134.0580488655744,
-      "y": 284.39524838658997,
-      "zoom": 0.5743491774985175
+      "x": -253.21862582356766,
+      "y": 120.71988688834423,
+      "zoom": 0.7475999660028788
     }
   },
   "name": "MER",
@@ -1258,8 +1326,8 @@
     "name": "Diagrams",
     "folderType": 1,
     "depth": 0,
-    "id": 345093
+    "id": 345091
   },
-  "id": 495001,
-  "updatedAtTimestamp": 1782246057
+  "id": 496428,
+  "updatedAtTimestamp": 1782328073
 }
